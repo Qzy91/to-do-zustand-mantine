@@ -28,11 +28,13 @@ const TaskPage = (()=>{
       }
 
     return(
-        !task ? 
+        !task 
+        ? 
         <Flex justify="center"
             align="center">
             <Loader m='30px'/>
-        </Flex> :
+        </Flex> 
+        :
         <Paper
             shadow="md" 
             radius="md" 
