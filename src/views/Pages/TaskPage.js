@@ -14,13 +14,11 @@ const TaskPage = (()=>{
     const store = useToDoStores()
     const [task, setTask] = useState()
     useEffect(()=>{
-        store.tasks.map((oneTask)=>{
+        return store.tasks.map((oneTask)=>{
         if (oneTask.id === id) {
             setTask(oneTask)
         }
         })
-        
-        console.log(task)
     },[])
 
     const formChange = (e) => {
